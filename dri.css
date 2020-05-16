@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+input {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+}
+body {
+    background-color: rgb(242, 250, 255);
+    /* overflow: hidden; */
+    position: relative;
+}
+li {
+    list-style: none;
+}
+
+
+/* 头部 */
+.li-hover {
+    min-width: 72px;
+    background-color: #333;
+    color: #fff;
+}
+.w {
+    width: 1080px;
+    margin: 0 auto;
+    /* padding: 30px 40px 60px; */
+    box-sizing: border-box;
+
+}
+.header {
+    margin-top: 50px;
+    padding: 30px 55px 60px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    /* height: 555px; */
+}
+.menu {
+    height: 100px;
+    font-size: 13px;
+    color: #666;
+}
+.m-left {
+    width: 75px;
+    height: 20px;
+
+    /* bg方式背景图需要宽高属性 */
+    background: url(https://hbimg.huabanimg.com/d58f932d06e3933645a349db284e45af9f283642935-5DozXT);
+}
+.m-right li {
+    float: right;
+    margin-left: 30px;
+    min-width: 72px;
+    height: 28x;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 6px;
+    /* transition: all .1s; */
+}
+.m-right li:hover {
+    background-color: #333;
+    color: #fff;
+}
+.banner {
+    /* height: 355px; */ 
+
+    /* 添加清除浮动后不需要固定高度 高度自适应 否则高度为0 */
+    overflow: hidden;
+}
+.b-left li {
+    /* margin-bottom: 25px; */
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+.b-left .btn-random, .btn-color {
+    min-width: 140px;
+    padding: 0 15px;
+    height: 40px;
+    background-color: #00b972;
+    margin: 40px 15px 100px 0;
+}
+.b-left .btn-color {
+    background-color: transparent;
+    border: 1px solid #00b972;
+    color: #00b972;
+}
+.b-right {
+    float: right;
+    width: 340px;
+    height: 320px;
+    margin-right: 60px;
+    /* background-color: rgb(223, 128, 128); */
+    background: url(https://hbimg.huabanimg.com/899d588a95e8cf894f3e6773ee4b46920a58f29b4e6d2-DCSRfU) no-repeat;
+    background-size: cover;
+}
+
+/* 圆角部分 */
+.two {
+    background-color: #fff;
+    /* height: 300px; */
+    border-radius: 90px 90px 0 0;
+    box-shadow: 0 -6px 12px 0 rgba(0, 0, 0, .05);
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%);
+    padding: 40px 55px 70px;
+}
+.t-left li {
+    height: 44px;
+    color: #999;
+    width: 300px;
+}
+.t-left .c-333 {
+    color: #333;
+}
+.t-left span {
+    height: 2px;
+    width: 0;
+    background-color: #00b972;
+    display: inline-block;
+    /* 行内元素(inline)状态下 宽高属性无效 */
+    margin-bottom: 4px;
+    margin-left: 20px;
+    /* padding-bottom: -4px; */
+    /* display: none; */
+    transition: width ease-out .4s;
+}
+.t-left li:hover {
+    color: #333;
+    font-weight: 700;
+}
+.t-left li:hover span {
+    width: 68px;
+    /* display: inline-block; */
+}
+.t-right .d-main {
+    width: 190px;
+    height: 268px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    transition: margin-top ease-in .25s;
+}
+.t-right .d-main:hover {
+    margin-top: -60px;
+    border: 0;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .15);
+}
+.t-right .d-photo {
+    width: 168px;
+    height: 168px;
+    background: url(https://hbimg.huabanimg.com/8636a21d63fc5bcfdbff92fd88c0d298d21f3ef96b925-5NKAc0_fw658/format/webp) no-repeat center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.t-right .d-photo-1 {
+    background: url(https://hbimg.huabanimg.com/89bcedeabf36bf5c81fb561f96c9a2ed1a8ae665b9500-6BiGLU_fw658/format/webp) center;
+    background-size: cover;
+}
+.t-right .d-photo-2 {
+    background: url(https://hbimg.huabanimg.com/176c59c5f4ce2ded1d5322fcafe1f37d1f7ae1302806f-P9vAFB_fw658/format/webp) center;
+    background-size: cover;
+}
+.t-right h1 {
+    margin: 10px 0 3px;
+    font-size: 14px;
+    height: 38px;
+
+    /* 文本超出两行显示... (以下5个都需要) */
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.t-right .iconfont {
+    float: left;
+    margin-right: 2px;
+    font-size: 12px;
+    color: rgb(240, 146, 4);
+}
+.t-right p {
+    font-size: 12px;
+    transform: scale(.8);
+    color: #999;
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+}
+.t-right span {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ff4f4f;
+}
